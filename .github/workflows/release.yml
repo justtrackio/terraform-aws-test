@@ -14,7 +14,6 @@ on:
 
 jobs:
   release:
-    name: Release
     runs-on: ubuntu-latest
     # Skip running release workflow on forks
     if: github.repository_owner == 'justtrackio'
@@ -33,5 +32,11 @@ jobs:
             @semantic-release/changelog
             @semantic-release/git
             conventional-changelog-conventionalcommits
+          branches: |
+            [
+              '+([0-9])?(.{+([0-9]),x}).x',
+              'master',
+              'main'
+            ]
         env:
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
