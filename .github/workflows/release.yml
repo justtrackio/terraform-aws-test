@@ -30,11 +30,11 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
-            conventional-changelog-conventionalcommits
+            conventional-changelog-conventionalcommits@4.0.0
           branches: |
             [
               '+([0-9])?(.{+([0-9]),x}).x',
               'main'
             ]
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_SEMANTIC_RELEASE_TOKEN_2023 }}
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
