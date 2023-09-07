@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/justtrackio/terraform-aws-test/compare/v1.0.0...v1.0.1) (2023-09-07)
+
+
+### Bug Fixes
+
+* test ([#22](https://github.com/justtrackio/terraform-aws-test/issues/22)) ([838237f](https://github.com/justtrackio/terraform-aws-test/commit/838237f9d6abb5ac9a579ef973fdc4c6ae9ee179))
+
 ## 1.0.0 (2023-09-06)
 
 
